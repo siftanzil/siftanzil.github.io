@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Task List</title>
+</head>
+
+<body>
+    <div>
+        <h1>My Task List</h1>
+    </div>
+    <hr>
+    <div class="container">
+        <h5><u>Add New task here</u></h5>
+        <form id="input_form">
+            <input 
+                type="text" 
+                autocomplete="off"
+                autocapitalize="on"
+                placeholder="Add new task" 
+                id="new_task">
+            <button 
+                type="submit" 
+                id="add_btn" 
+                value="add task">Add Task</button>
+        </form>
+    </div>
+    <hr>
+    <div class="container">
+        <h5><u>My Current Tasks</u></h5>
+        <input 
+        type="text" 
+        placeholder="Search task" 
+        autocomplete="off"
+        autocapitalize="on"
+        id="task_filter">
+        <ul id="task_list">
+        </ul>
+        <button id="clear_btn"> Clear All Tasks</button>
+    </div>
+    <hr>
+    <hr>
+    <h5> <a href="../index.html">Home Page</a></h5>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
