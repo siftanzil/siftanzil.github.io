@@ -28,17 +28,17 @@ function compareGuess(guess) {
         } else {
             chance--;
             lives.textContent = (`${chance}`);
-            hint.textContent = ("too big");
+            hint.textContent = ("SMALLER");
             inputBox.value = "";
             inputBox.focus();
         }
     } else {
-        if (chance == 1 || chance <1) {
+        if (chance == 1 || chance < 1) {
             lostGame();
         } else {
             chance--;
             lives.textContent = (`${chance}`);
-            hint.textContent = ("too small");
+            hint.textContent = ("BIGGER");
             inputBox.value = '';
             inputBox.focus();
         }
@@ -57,9 +57,9 @@ function reload() {
 
 function lostGame() {
 
-    hint.textContent = `You lose!! Correct answer is ${target}`;
+    hint.textContent = `LOST!! Correct answer is ${target}`;
     console.log("You Lose");
-    lives.textContent = 'rip'
+    lives.textContent = 'RIP'
     button.textContent = 'play again';
     inputBox.disabled = true;
     inputBox.style.display = 'none';
@@ -71,7 +71,7 @@ function winGame() {
 
     hint.textContent = `Congrats!! You Win!!`;
     console.log("You Win");
-    lives.textContent = 'long live!!'
+    lives.textContent = 'LONG LIVE'
     button.textContent = 'play Again';
     inputBox.disabled = true;
     inputBox.style.display = 'none';

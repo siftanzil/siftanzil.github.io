@@ -1,4 +1,52 @@
-h2{
-    background: #000;
-    color: bisque;
+h2 {
+    color: rgb(20, 19, 18);
+}
+
+.title {
+    background: rgb(137, 210, 137);
+    padding: 5px;
+    border: 5px solid rgb(175, 175, 240);
+    border-radius: 50px;
+    font-family: cursive;
+    background-color: rgb(169, 228, 228);
+    background-blend-mode: color-burn;
+}
+
+.life,
+.clue {
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: 5px rgb(239, 176, 169) solid;
+    border-radius: 10px;
+}
+
+b {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 5px;
+}
+
+.life {
+    background-color: greenyellow;
+}
+
+.clue {
+    background-color: azure;
+}
+
+.inputBox,
+.try-btn {
+    border-radius: 10px;
+    border: solid green 3px;
+}
+
+.row {
+    max-width: 700px;
 }

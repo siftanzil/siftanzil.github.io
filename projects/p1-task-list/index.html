@@ -12,41 +12,27 @@
 </head>
 
 <body>
-    <div>
-        <h1>My Task List</h1>
-    </div>
+    <header>
+        <h1>TASK LIST</h1>
+    </header>
     <hr>
     <div class="container">
-        <h5><u>Add New task here</u></h5>
+        <h5>Add task</h5>
         <form id="input_form">
-            <input 
-                type="text" 
-                autocomplete="off"
-                autocapitalize="on"
-                placeholder="Add new task" 
-                id="new_task">
-            <button 
-                type="submit" 
-                id="add_btn" 
-                value="add task">Add Task</button>
+            <input type="text" autocomplete="off" autocapitalize="on" placeholder="Add new task" id="new_task">
+            <button type="submit" id="add_btn" value="add task">Add Task</button>
         </form>
     </div>
     <hr>
     <div class="container">
-        <h5><u>My Current Tasks</u></h5>
-        <input 
-        type="text" 
-        placeholder="Search task" 
-        autocomplete="off"
-        autocapitalize="on"
-        id="task_filter">
+        <h5>Current Tasks</h5>
+        <input type="text" placeholder="Search task" autocomplete="off" autocapitalize="on" id="task_filter">
         <ul id="task_list">
         </ul>
         <button id="clear_btn"> Clear All Tasks</button>
     </div>
     <hr>
-    <hr>
-    <h5> <a href="../index.html">Home Page</a></h5>
+    <footer> <a href="index.html">HOME PAGE</a></footer>
     <script src="./js/script.js"></script>
 </body>
 

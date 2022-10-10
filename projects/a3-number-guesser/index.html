@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Guesser game</title>
 </head>
+
 <body>
-    
-    <div class="container">
-        <div>
-            <h2>Guess The Number!</h2>
-            <hr>
+
+    <div class="container-flex">
+        <div class="title text-center align-items-center">
+            <h1>Guess The Number!</h1>
         </div>
-        <div class="row">
-            <input class="inputBox one-half column" type="number" placeholder=" Guess between 0 - 10">
-            <button class="try-btn button-primary one-third column columns ">Play</button>
-            <br>
-            <br><hr>
-            <b>LIFE</b>
-            <p class="lives bolder">3</p>
-            <hr>
-            <b>HINT</b>
-            <p class="hint bolder">Try to guess a number from 0 to 10</p>
-            <hr>
+        <div class="row container text-center align-items-center m-auto">
+            <div class="col-12 text-center justify-content-center">
+                <hr>
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control inputBox" placeholder="choose from 0 - 10">
+                    <div class="input-group-append">
+                        <button class="try-btn btn-lg  btn-success text-center" type="button">PLAY</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="row container m-auto">
+                <div class="col-3 life m-auto">
+                    <b style="font-size: 30px;">&hearts;
+                    </b>
+                    <hr>
+                    <p class="lives bolder">3</p>
+                </div>
+
+                <div class="col-9 clue m-auto">
+                    <b>HINT</b>
+                    <hr>
+                    <p class="hint bolder">Try to guess a number from 0 to 10</p>
+                </div>
+            </div>
         </div>
 
         <!-- Script -->
         <script src="./js/script.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 </body>
+
 </html>
