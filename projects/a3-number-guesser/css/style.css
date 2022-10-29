@@ -22,7 +22,6 @@ p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
     font-weight: bold;
-    border: 5px rgb(239, 176, 169) solid;
     border-radius: 10px;
 }
 
@@ -35,6 +34,12 @@ b {
 
 .life {
     background-color: greenyellow;
+}
+
+.lives{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
 }
 
 .clue {
