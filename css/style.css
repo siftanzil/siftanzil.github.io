@@ -5,3 +5,7 @@ body{
 .banner-coloumn{
     background-color: #327456;
 }
+
+img {
+    filter: grayscale(100%);
+}
